@@ -54,6 +54,7 @@ int main()
         printf("enter value of %d element: ", i + 1);
         scanf("%d", &set[i]);
     }
+    printf("null set");
 
     subsets(set, n);
     return 0;
@@ -70,7 +71,7 @@ void subsets(int set[], int n)
         for (int j = 0; j < n; j++)
         {
             if (z[j] == '1')
-                printf("%d", set[j]);
+                printf("%d ", set[j]);
         }
         printf("\n");
     }
